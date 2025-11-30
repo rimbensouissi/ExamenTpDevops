@@ -3,23 +3,29 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
-                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+                          http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.uok</groupId>
-  <artifactId>mini_project_devops</artifactId>
-  <version>1.0-SNAPSHOT</version>
-  <packaging>war</packaging>
+  <groupId>com.uok</groupId> <artifactId>mini_project_devops</artifactId> <version>1.0-SNAPSHOT</version> <packaging>war</packaging>
 
-  <name>mini_project_devops Maven Webapp</name>
-  <url>http://www.example.com</url>
+  <name>mini_project_devops Maven Webapp</name> <url>[http://www.example.com](http://www.example.com)</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>8</maven.compiler.source>
-    <maven.compiler.target>8</maven.compiler.target>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
   </properties>
+
+  <repositories>
+    <repository>
+      <id>central</id>
+      <name>Maven Central Repository</name>
+      <url>https://repo.maven.apache.org/maven2</url>
+      <releases><enabled>true</enabled></releases>
+      <snapshots><enabled>false</enabled></snapshots>
+    </repository>
+  </repositories>
 
   <dependencies>
     <dependency>
@@ -32,6 +38,8 @@
 
   <build>
     <finalName>mini_project_devops</finalName>
+
+
     <pluginManagement>
       <plugins>
         <plugin>
@@ -48,7 +56,7 @@
         </plugin>
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
-          <version>3.3.0</version>
+          <version>3.0.0-M7</version>
         </plugin>
         <plugin>
           <artifactId>maven-war-plugin</artifactId>
@@ -64,6 +72,8 @@
         </plugin>
       </plugins>
     </pluginManagement>
+
+
   </build>
 
 </project>
