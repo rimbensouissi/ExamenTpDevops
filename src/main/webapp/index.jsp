@@ -1,67 +1,80 @@
-<%@ page contentType="text/html; charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page pageEncoding="UTF-8" %>
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 <head>
-    <meta charset="UTF-8" />
-    <title>Mini Projet DevOps – Démonstration CI/CD</title>
+    <meta charset="UTF-8">
+    <title>Projet DevOps ISET Kairouan</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 40px;
-            background: #f2f2f2;
+            background-color: #f5f5f5;
+            line-height: 1.6;
         }
         .container {
             background: white;
-            padding: 25px;
+            padding: 40px;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
             max-width: 800px;
-            margin: auto;
+            margin: 0 auto;
         }
-        h1, h2 {
-            color: #1976d2;
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
         }
-        p, li {
-            font-size: 18px;
-            line-height: 1.5;
+        .message {
+            background: #e8f4fd;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 5px solid #3498db;
         }
-        .tag {
-            background: #1976d2;
-            padding: 5px 10px;
-            color: white;
-            display: inline-block;
-            border-radius: 5px;
-            margin-right: 10px;
+        ul, ol {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        .tech-list, .steps-list {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
         }
     </style>
 </head>
 <body>
 <div class="container">
-    <h1>Bienvenue dans notre mini-projet de démonstration DevOps</h1>
+    <h1>✅ Projet DevOps ISET Kairouan</h1>
 
-    <p>Cette application est un simple projet Spring Boot destiné à tester :</p>
+    <div class="message">
+        <h2>👋 Hello ISET KAIROUAN !</h2>
+        <p>Bienvenue dans votre cours DevOps de l'année 2025-2026</p>
+    </div>
 
-    <ul>
-        <li>CI/CD</li>
-        <li>Jenkins</li>
-        <li>GitHub</li>
-        <li>Build Maven</li>
-        <li>Déploiement WAR</li>
-        <li>Tomcat</li>
-    </ul>
+    <h3>🛠 Technologies utilisées :</h3>
+    <div class="tech-list">
+        <ul>
+            <li>Java JEE</li>
+            <li>JSP</li>
+            <li>Apache Tomcat</li>
+            <li>Maven</li>
+        </ul>
+    </div>
 
-    <h2>Objectifs du Projet</h2>
-    <ul>
-        <li>Automatiser le build du projet avec Jenkins (pipeline CI/CD).</li>
-        <li>Générer un fichier <strong>.war</strong> automatiquement.</li>
-        <li>Déployer la nouvelle version sur un serveur Tomcat à chaque commit.</li>
-        <li>Mettre en place un pipeline de test & déploiement automatique.</li>
-    </ul>
+    <h3>📈 Prochaines étapes :</h3>
+    <div class="steps-list">
+        <ol>
+            <li>Git → GitHub</li>
+            <li>Intégration Continue (Jenkins)</li>
+            <li>Déploiement Automatisé</li>
+        </ol>
+    </div>
 
-    <h2>Message de Test</h2>
-    <p><strong>Hello DevOps ⚙️ — Déploiement réussi !</strong></p>
-
-    <p>Cette page est utilisée comme preuve du succès du pipeline Jenkins, indiquant que la nouvelle version a bien été construite et déployée.</p>
 </div>
 </body>
 </html>
